@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<a href="{% url 'blackjack' %}">Back to the game</a>
+<br />
+<br />
+<h2>RULES</h2>
+
+<br />
+<ul>
+    <li>
+        <a href="https://en.wikipedia.org/wiki/Blackjack" target="_blank">Wikipedia page</a>
+    </li>
+    <li>
+        <a href="https://bicyclecards.com/how-to-play/blackjack/" target="_blank">Bicycle page</a>
+    </li>
+    <li>
+        <a href="http://www.casinostrategy.org/blackjack/blackjack-terminology.htm" target="_blank"
+            >Blackjack Strategy</a
+        >
+    </li>
+</ul>
+
+{% endblock %}

@@ -1,0 +1,371 @@
+:root {
+  --color-green-light: #64a633;
+  --color-green-dark: #4e762d;
+  --color-header-dark: #252525;
+  --color-green-background: #329e65;
+  --color-orange-tinted: #e0ac3cd2;
+  --color-white-tinted: #a8aeac;
+  --color-background-tinted: #1515156b;
+  --color-background-tinted-dark: #151515c9; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  height: 100%; }
+
+body {
+  height: 100%;
+  background-color: var(--color-green-background);
+  background-image: linear-gradient(to right, rgba(16, 59, 50, 0.6), rgba(16, 59, 50, 0.2), rgba(16, 59, 50, 0), rgba(16, 59, 50, 0.2), rgba(16, 59, 50, 0.6)), url(../img/back/fabric.png);
+  font-family: "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: whitesmoke;
+  box-sizing: border-box; }
+
+a,
+a:visited,
+.btn-link,
+.btn-link:visited {
+  text-decoration: none;
+  color: white; }
+
+a:hover,
+.btn-link:hover {
+  color: orange; }
+
+.container {
+  margin: 0 auto;
+  height: 87%;
+  position: relative;
+  padding: 3rem;
+  max-width: 100rem;
+  font-size: 1.6rem;
+  align-items: center; }
+
+.container-home {
+  display: flex;
+  margin: 0 auto;
+  max-width: 100rem;
+  flex-wrap: wrap;
+  overflow-x: auto; }
+  .container-home__box {
+    width: 45rem;
+    height: 25rem;
+    margin: 1rem; }
+    .container-home__box--photo {
+      width: 45rem;
+      height: 25rem;
+      border: 1px solid white; }
+
+.btn {
+  padding: 0.3rem;
+  height: 3rem;
+  min-width: 6rem;
+  background-color: #cfc29b;
+  background: linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+  border-radius: 2px;
+  border: none;
+  color: #151515;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.2s; }
+
+.btn:hover {
+  cursor: pointer;
+  background-color: orange;
+  transform: translateY(0.5px); }
+
+.btn:focus {
+  outline: none; }
+
+.btn-link {
+  color: inherit;
+  font-size: inherit;
+  background: none !important;
+  border: none;
+  cursor: pointer; }
+
+.login-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid white;
+  margin: 10rem auto;
+  min-height: 30rem;
+  width: 40rem; }
+  .login-form__title {
+    margin-bottom: 3rem; }
+  .login-form__row {
+    padding: 0.5rem; }
+  .login-form__btn {
+    width: 2rem;
+    margin: 1rem auto; }
+
+.score-board {
+  position: absolute;
+  display: flex;
+  top: -3rem;
+  left: 3rem; }
+  .score-board__label {
+    color: var(--color-white-tinted);
+    position: absolute;
+    top: 4.5rem;
+    left: 4.25rem; }
+  .score-board__bet, .score-board__bank {
+    min-width: 12rem;
+    font-size: 2rem;
+    background-color: var(--color-background-tinted-dark);
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid var(--color-white-tinted); }
+  .score-board__bank {
+    border-radius: 0 0 0 10px; }
+  .score-board__bet {
+    border-radius: 0 0 10px 0; }
+
+.result {
+  font-size: 2.5rem;
+  background-color: var(--color-background-tinted-dark);
+  padding: 1.5rem 4rem;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 10;
+  border: 1px solid var(--color-white-tinted); }
+  .result__button-box {
+    display: flex;
+    justify-content: space-around;
+    width: 15rem;
+    margin: 0 auto; }
+
+.chips-box {
+  position: absolute;
+  top: 11.5rem;
+  z-index: 5; }
+  .chips-box__display {
+    padding: 1rem;
+    padding: 2rem;
+    align-items: center;
+    min-height: 12rem;
+    display: flex;
+    width: 32rem;
+    background-color: var(--color-background-tinted-dark);
+    border-radius: 10px;
+    border: 1px solid var(--color-white-tinted); }
+  .chips-box__button-box {
+    display: flex;
+    justify-content: space-around;
+    width: 20rem;
+    margin: 0 auto; }
+  .chips-box__chip-item {
+    height: 6.5rem;
+    width: 6.6rem;
+    padding: 5px; }
+    .chips-box__chip-item:hover {
+      cursor: pointer; }
+  .chips-box__clear-bet, .chips-box__all-in {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    width: 8rem;
+    height: 3.5rem;
+    margin-top: 0.75rem; }
+
+.padding-small {
+  padding: 1rem; }
+
+.text-green {
+  color: var(--color-green-light); }
+
+.text-orange {
+  color: var(--color-orange-tinted); }
+
+.text-white {
+  color: var(--color-white-tinted); }
+
+.margin-right-1 {
+  margin-right: 1rem; }
+
+.margin-right-2 {
+  margin-right: 2rem; }
+
+.margin-left-9 {
+  margin-left: 8.5rem; }
+
+.margin-left-10 {
+  margin-left: 10rem; }
+
+.margin-right-10 {
+  margin-right: 10rem; }
+
+@keyframes blackjackPlayerDealCard {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+.header {
+  height: 6rem;
+  background-color: var(--color-header-dark); }
+  .header-box {
+    margin: auto;
+    display: flex;
+    max-width: 114rem;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center; }
+    .header-box__title {
+      display: flex;
+      align-items: center;
+      margin-left: 3rem;
+      font-size: 2rem; }
+      .header-box__title--logo {
+        margin-right: 1rem; }
+    .header-box__game-title {
+      font-size: 2rem;
+      text-transform: uppercase; }
+    .header-box__logins-box {
+      font-size: 1.6rem;
+      margin-right: 3rem;
+      display: flex; }
+      .header-box__logins-box--item {
+        margin-left: 2rem; }
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  color: var(--color-white-tinted); }
+
+.markosproj {
+  color: var(--color-white-tinted); }
+  .markosproj:hover {
+    color: orange; }
+
+.game-title {
+  margin-bottom: 2rem; }
+
+.top-block {
+  display: flex;
+  justify-content: space-between; }
+
+.blackjack-table {
+  background-image: url(../img/back/blackjack-table-top.png);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 50rem;
+  border: 1px solid var(--color-orange-tinted);
+  padding: 1rem;
+  position: relative;
+  border-radius: 6% 6% 40% 40%; }
+  .blackjack-table__top-section, .blackjack-table__middle-section, .blackjack-table__bottom-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem; }
+  .blackjack-table__middle-section {
+    height: 13rem; }
+  .blackjack-table__top-section--left, .blackjack-table__middle-section--left, .blackjack-table__middle-section--middle, .blackjack-table__middle-section--right, .blackjack-table__bottom-section--left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    width: 30%; }
+  .blackjack-table__middle-section--left, .blackjack-table__middle-section--right {
+    flex-direction: column; }
+  .blackjack-table__top-section--middle, .blackjack-table__middle-section--middle, .blackjack-table__bottom-section--middle {
+    display: flex;
+    width: 40%;
+    position: relative; }
+  .blackjack-table__top-section--right, .blackjack-table__middle-section--right, .blackjack-table__bottom-section--right {
+    display: flex;
+    justify-content: center;
+    width: 30%; }
+  .blackjack-table__middle-section--middle {
+    position: relative; }
+
+.card-image {
+  height: 15rem; }
+
+.card-on-top {
+  margin-left: -8.5rem; }
+
+.card-skewed-1 {
+  transform: rotate(-1deg); }
+
+.card-skewed-2 {
+  transform: rotate(0deg); }
+
+.card-skewed-3 {
+  transform: rotate(1deg); }
+
+.card-deck {
+  height: 15.3rem;
+  margin-right: 8rem; }
+
+.dealer-cards,
+.player-cards-1,
+.player-cards-2 {
+  min-height: 15rem;
+  display: flex;
+  justify-content: start;
+  position: relative;
+  left: 8rem !important; }
+
+.player-cards-2 {
+  position: absolute;
+  margin-left: 16rem; }
+
+.dealer-score,
+.player-score,
+.player-score-2 {
+  background-color: var(--color-background-tinted);
+  border-radius: 50%;
+  padding: 1rem;
+  min-width: 5.5rem;
+  min-height: 5.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  border-style: solid;
+  border-color: var(--color-white-tinted); }
+  .dealer-score__tag,
+  .player-score__tag,
+  .player-score-2__tag {
+    color: var(--color-white-tinted);
+    font-size: 2.5rem;
+    padding: 1rem;
+    margin-left: 10rem; }
+
+.button-box {
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+  margin: 1rem auto;
+  align-items: center; }
+
+.hit-card,
+.stand-pat,
+.double-down,
+.buy-insurance,
+.new-hand,
+.split-cards {
+  height: 5rem;
+  width: 12rem;
+  border-radius: 10px;
+  text-transform: uppercase; }

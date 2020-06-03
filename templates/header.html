@@ -1,0 +1,16 @@
+{% load static %}
+<div class="header-box">
+    <div class="header-box__title">
+        <img
+            class="header-box__title--logo"
+            src="{% static '/img/logos/cards-logo-48.png' %}"
+        />
+        <a href="{% url 'home-page' %}">Proper Card Games</a>
+    </div>
+    <div class="header-box__game-title">
+        {% if request.path == '/blackjack/' %}
+        <span>Blackjack</span>
+
+        {% endif %}
+    </div>
+</div>
